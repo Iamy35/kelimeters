@@ -1,0 +1,23 @@
+void terstenYazdir()
+{
+    char word[100];
+    printf("Type a word which will be reversed.");
+    scanf("%s", word); //string de amsterdam kullanmıyoruz.
+    int wordLength; // alacağımız kelimenin uzunluğunu bulmadan kelimeyi tersten yazdıramayız.
+    while(word[wordLength] != '\0')
+    {
+        wordLength = wordLength + 1;
+    }
+    printf("The length of the word %d ", wordLength);
+    for(int i = wordLength - 1; i >= 0; i--)
+    {
+        printf("%c", word[i]);
+    }
+    printf("\n");
+}
+int main()
+{
+
+  terstenYazdir();
+    return 0;
+}
